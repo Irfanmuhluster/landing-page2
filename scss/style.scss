@@ -428,8 +428,12 @@ ul {
 }
 
 .featured-service {
+    padding-left: 3rem;
+    padding-right: 3rem;
     @include media-breakpoint-down (lg) {
         padding-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .icon-box{
         padding: 30px;
@@ -499,14 +503,15 @@ ul {
 }
 
 .about-us {
-    margin: 3rem;
-    padding: 1rem;
-    width: 80%;
-    @include media-breakpoint-up (md) {
-        padding: 3rem;
+    // margin: 3rem;
+    padding: 3rem;
+    z-index: 2;
+    left:-50px;
+
+    @include media-breakpoint-down (md) {
+        padding: 1rem;
         width: 100%;
-        z-index: 2;
-        left:-50px;
+        left: 0;
     }
 }
 
