@@ -7546,6 +7546,10 @@ ul {
   right: 0;
   z-index: 0; }
 
+@media (max-width: 991.98px) {
+  .featured-service {
+    padding-top: 3rem; } }
+
 .featured-service .icon-box {
   padding: 30px;
   width: 100%;
@@ -7554,8 +7558,11 @@ ul {
   border-radius: 8px;
   background-color: #ffffff;
   box-shadow: 0 30px 100px rgba(0, 0, 0, 0.17);
-  margin-top: -100px;
+  margin-top: 0px;
   z-index: 1; }
+  @media (min-width: 992px) {
+    .featured-service .icon-box {
+      margin-top: -100px; } }
   .featured-service .icon-box .title {
     font-weight: 700;
     margin-bottom: 15px;
@@ -7594,3 +7601,14 @@ ul {
 
 .box-service:hover {
   box-shadow: 0 0.5rem 1rem rgba(37, 99, 235, 0.15); }
+
+.about-us {
+  margin: 3rem;
+  padding: 1rem;
+  width: 80%; }
+  @media (min-width: 768px) {
+    .about-us {
+      padding: 3rem;
+      width: 100%;
+      z-index: 2;
+      left: -50px; } }
